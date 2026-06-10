@@ -1,173 +1,221 @@
 /* Шрифт */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&display=swap');
 
-/* Сброс отступов */
+/* Сброс */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Страница */
 html,
 body {
-    margin: 0;
-    padding: 0;
+    width: 100%;
     min-height: 100%;
 }
 
-/* Страница */
+/* Общий стиль */
 body {
     background: #050505;
+
     color: #d4c096;
-    font-family: "Cinzel", serif;
+
+    font-family: 'Cinzel', serif;
+
     text-align: center;
 
     user-select: none;
     -webkit-user-select: none;
 }
 
-/* Общий экран */
+/* Главный блок */
 .page {
     min-height: 100vh;
+
     padding-top: 20px;
+
     overflow: hidden;
 }
 
-/* Лого */
+/* ================================= */
+/* ЛОГО */
+/* ================================= */
+
 .logo {
+
     width: 420px;
-    height: 300px;
+    height: 260px;
+
     margin: 0 auto 10px;
 
     background-image: url("logo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
-    pointer-events: none;
 }
 
-/* Блок текста */
+/* ================================= */
+/* ТЕКСТ */
+/* ================================= */
+
 .message {
-    max-width: 1000px;
+
+    max-width: 1200px;
+
     margin: 0 auto;
-    padding: 0 30px;
+
+    padding: 0 20px;
 
     position: relative;
     z-index: 2;
 }
 
 /* WEBSITE UNDER CONSTRUCTION */
-.small-title {
-    margin: 0 0 14px;
+
+.construction {
 
     color: #d4c096;
 
     font-size: 24px;
+
     font-weight: 800;
-    letter-spacing: 5px;
+
+    letter-spacing: 6px;
+
     text-transform: uppercase;
+
+    margin-bottom: 12px;
 }
 
-/* FIRST COLLECTION DROPS THIS FALL — тот же размер, серебристый */
-.fall-title {
-    margin: 0 0 26px;
+/* FIRST COLLECTION DROPS THIS FALL */
 
-    color: #c9c9c9;
+.fall {
+
+    color: #c7c7c7;
 
     font-size: 24px;
+
     font-weight: 800;
-    letter-spacing: 5px;
+
+    letter-spacing: 6px;
+
     text-transform: uppercase;
+
+    margin-bottom: 24px;
 }
 
-/* Слоган */
+/* СЛОГАН */
+
 .slogan {
-    margin: 0;
 
     color: #d4c096;
 
     font-size: 30px;
+
     font-weight: 900;
-    line-height: 1.35;
+
     letter-spacing: 3px;
+
+    line-height: 1.35;
+
     text-transform: uppercase;
 }
 
-/* Нижние картинки */
+/* ================================= */
+/* НИЖНИЕ КАРТИНКИ */
+/* ================================= */
+
 .bottom-images {
+
     width: 100%;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-end;
 
     margin-top: -180px;
-    padding: 0;
 
     position: relative;
+
     z-index: 1;
 }
 
-/* Общие настройки картинок */
+/* Общие настройки */
+
 .bottom-image {
-    width: 820px;
-    height: 820px;
+
+    width: 850px;
+    height: 850px;
 
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
-
-    pointer-events: none;
 }
 
-/* Левая картинка */
+/* Левая */
+
 .image-left {
-    margin-left: -160px;
+
+    margin-left: -170px;
+
     background-image: url("image-1.png");
 }
 
-/* Правая картинка */
+/* Правая */
+
 .image-right {
-    margin-right: -160px;
+
+    margin-right: -170px;
+
     background-image: url("image-2.png");
 }
 
-/* Телефон */
+/* ================================= */
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+/* ================================= */
+
 @media (max-width: 700px) {
+
     .logo {
-        width: 320px;
-        height: 220px;
-        margin-bottom: 5px;
+
+        width: 300px;
+        height: 200px;
     }
 
-    .message {
-        padding: 0 18px;
-    }
+    .construction,
+    .fall {
 
-    .small-title,
-    .fall-title {
-        font-size: 15px;
+        font-size: 14px;
+
         letter-spacing: 3px;
     }
 
     .slogan {
+
         font-size: 18px;
-        letter-spacing: 2px;
     }
 
     .bottom-images {
+
         margin-top: -70px;
     }
 
     .bottom-image {
-        width: 64vw;
-        height: 64vw;
+
+        width: 62vw;
+        height: 62vw;
     }
 
     .image-left {
-        margin-left: -20vw;
+
+        margin-left: -18vw;
     }
 
     .image-right {
-        margin-right: -20vw;
+
+        margin-right: -18vw;
     }
 }
