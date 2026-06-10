@@ -47,7 +47,7 @@ body {
 
 /* Рамка с текстом */
 .message-box {
-    width: 950px;
+    width: 600px;
     max-width: 90vw;
 
     margin: 0 auto 10px;
