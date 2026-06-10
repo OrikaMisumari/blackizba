@@ -1,7 +1,7 @@
-/* Шрифт в стиле постера */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+/* Шрифт */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&display=swap");
 
-/* Убираем стандартные отступы */
+/* Сброс */
 * {
     box-sizing: border-box;
 }
@@ -13,7 +13,7 @@ body {
     min-height: 100%;
 }
 
-/* Общий стиль сайта */
+/* Страница */
 body {
     background: #050505;
     color: #d4c096;
@@ -24,17 +24,17 @@ body {
     -webkit-user-select: none;
 }
 
-/* Главный контейнер */
+/* Главный экран */
 .page {
     min-height: 100vh;
-    padding: 30px 0 0;
+    padding-top: 20px;
     overflow: hidden;
 }
 
-/* ЛОГО — крупнее */
+/* Лого */
 .logo {
-    width: 520px;
-    height: 360px;
+    width: 420px;
+    height: 300px;
     margin: 0 auto 10px;
 
     background-image: url("logo.png");
@@ -45,64 +45,67 @@ body {
     pointer-events: none;
 }
 
-/* ТЕКСТ — без рамки */
+/* Блок текста */
 .message {
-    max-width: 1200px;
-    margin: 0 auto 20px;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 0 30px;
+
+    position: relative;
+    z-index: 2;
 }
 
 /* WEBSITE UNDER CONSTRUCTION */
 .small-title {
-    margin: 0 0 24px;
+    margin: 0 0 18px;
 
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 800;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
 /* FIRST COLLECTION DROPS THIS FALL */
 .main-title {
-    margin: 0 0 20px;
+    margin: 0 0 24px;
 
-    font-size: 42px;
-    font-weight: 800;
+    font-size: 48px;
+    font-weight: 900;
     letter-spacing: 2px;
+    line-height: 1.15;
     text-transform: uppercase;
-
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-
-/* BORN UNDER THE SUN */
+/* Слоган */
 .slogan {
     margin: 0;
 
-    font-size: 42px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 900;
     line-height: 1.35;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 /* Нижние картинки */
 .bottom-images {
     width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 
-    margin-top: -20px;
+    margin-top: -180px;
     padding: 0;
+
+    position: relative;
+    z-index: 1;
 }
 
-/* Обе нижние картинки — сильно крупнее */
+/* Общие настройки картинок */
 .bottom-image {
-    width: 900px;
-    height: 900px;
+    width: 820px;
+    height: 820px;
 
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -111,67 +114,64 @@ body {
     pointer-events: none;
 }
 
-/* Левая картинка — сильнее влево */
+/* Левая картинка */
 .image-left {
-    margin-left: -180px;
+    margin-left: -160px;
     background-image: url("image-1.png");
 }
 
-/* Правая картинка — сильнее вправо */
+/* Правая картинка */
 .image-right {
-    margin-right: -180px;
+    margin-right: -160px;
     background-image: url("image-2.png");
 }
 
-/* Версия для телефона */
+/* Телефон */
 @media (max-width: 700px) {
-
     .page {
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     .logo {
-        width: 330px;
-        height: 230px;
-        margin-bottom: 10px;
+        width: 320px;
+        height: 220px;
+        margin-bottom: 5px;
     }
 
     .message {
         padding: 0 18px;
-        margin-bottom: 20px;
     }
 
     .small-title {
-        font-size: 18px;
-        letter-spacing: 4px;
-        margin-bottom: 18px;
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin-bottom: 14px;
     }
 
     .main-title {
-        font-size: 34px;
-        letter-spacing: 2px;
-        margin-bottom: 28px;
+        font-size: 28px;
+        margin-bottom: 20px;
     }
 
     .slogan {
-        font-size: 22px;
-        letter-spacing: 3px;
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 
     .bottom-images {
-        margin-top: 0;
+        margin-top: -70px;
     }
 
     .bottom-image {
-        width: 62vw;
-        height: 62vw;
+        width: 64vw;
+        height: 64vw;
     }
 
     .image-left {
-        margin-left: -18vw;
+        margin-left: -20vw;
     }
 
     .image-right {
-        margin-right: -18vw;
+        margin-right: -20vw;
     }
 }
