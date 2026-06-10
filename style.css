@@ -15,6 +15,7 @@ body {
 
 .logo {
     position: relative;
+    z-index: 10;
     width: 350px;
     max-width: 90%;
     display: block;
@@ -27,6 +28,9 @@ body {
 
 .text-block {
     margin-bottom: 40px;
+    position: relative;
+
+    z-index: 10;
 }
 
 .website {
@@ -63,6 +67,9 @@ body {
 
 .bottom-images {
     margin-top: -150px;
+    position: relative;
+
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: flex-end;
