@@ -14,7 +14,7 @@ body {
    ========================= */
 
 .logo {
-    width: 400px;
+    width: 500px;
     max-width: 90%;
     display: block;
     margin: 0 auto 30px auto;
@@ -29,7 +29,7 @@ body {
 }
 
 .website {
-    color: #d1b98f; /* как на старом сайте */
+    color: #d1b98f;
 
     font-size: 34px;
     font-weight: 700;
@@ -38,7 +38,6 @@ body {
     margin-bottom: 18px;
 }
 
-/* Цвет как у логотипа */
 .collection {
     color: #d7d2ca;
 
@@ -63,7 +62,6 @@ body {
 
 .bottom-images {
     display: flex;
-
     justify-content: center;
     align-items: flex-end;
 
@@ -87,7 +85,8 @@ body {
 @media (max-width: 900px) {
 
     .logo {
-        width: 90%;
+        width: 500px;
+        max-width: 90%;
     }
 
     .website,
