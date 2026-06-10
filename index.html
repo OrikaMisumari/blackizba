@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- Кодировка сайта -->
-  <meta charset="UTF-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Чтобы сайт нормально выглядел на телефоне -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Black Izba</title>
 
-  <!-- Название вкладки браузера -->
-  <title>Black Izba</title>
+<style>
 
-  <!-- Подключаем отдельный файл со стилями -->
-  <link rel="stylesheet" href="style.css" />
+body{
+    margin:0;
+    background:#050505;
+    color:#e8dfcf;
+    font-family:Georgia,serif;
+    text-align:center;
+}
+
+.logo{
+    width:300px;
+    margin:50px auto;
+}
+
+.logo img{
+    width:100%;
+}
+
+.text{
+    max-width:700px;
+    margin:auto;
+    padding:0 20px;
+    font-size:22px;
+    line-height:1.7;
+}
+
+.bottom{
+    margin-top:70px;
+
+    display:flex;
+    justify-content:center;
+    gap:60px;
+
+    flex-wrap:wrap;
+}
+
+.bottom img{
+    width:300px;
+    max-width:90vw;
+}
+
+</style>
 </head>
 
-<body oncontextmenu="return false;">
-  <main class="page">
+<body>
 
-    <!-- Верхний логотип. Картинка будет фоном, не обычным изображением -->
-    <div class="logo"></div>
+<div class="logo">
+    <img src="logo.png">
+</div>
 
-    <!-- Текстовый блок -->
-    <section class="text">
-      <p>
-        Black Izba is a dark folklore clothing brand inspired by Slavic mythology.
-      </p>
+<div class="text">
 
-      <p>
-        Forgotten legends, ancient forests, old spirits and creatures from the edge of the woods.
-      </p>
-    </section>
+<p>
+Black Izba is a dark folklore clothing brand inspired by Slavic mythology.
+</p>
 
-    <!-- Нижние две картинки -->
-    
-      <div class="bottom-image image-left"></div>
-      <div class="bottom-image image-right"></div>
-    
+<p>
+Forgotten legends, ancient forests, old spirits and creatures from the edge of the woods.
+</p>
 
-  </main>
+</div>
+
+<div class="bottom">
+
+    <img src="image-1.png">
+
+    <img src="image-2.png">
+
+</div>
+
 </body>
 </html>
