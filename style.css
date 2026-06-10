@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&display=swap');
-
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
 body {
     margin: 0;
     padding: 20px 0;
@@ -126,6 +130,5 @@ body {
 .bottom-image {
     width: 70%;
     max-width: 350px;
-}
 }
 }
