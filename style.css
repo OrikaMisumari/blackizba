@@ -22,7 +22,6 @@ body {
 }
 
 .page {
-  position: relative;
   min-height: 100vh;
   padding-top: 20px;
   overflow: hidden;
@@ -31,7 +30,7 @@ body {
 .logo {
   width: 420px;
   height: 300px;
-  margin: 0 auto 18px;
+  margin: 0 auto 10px;
 
   background-image: url("logo.png");
   background-repeat: no-repeat;
@@ -39,13 +38,14 @@ body {
   background-size: contain;
 }
 
-.text {
+.message {
   position: relative;
-  z-index: 5;
-  margin-top: 0;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
-.info {
+.line {
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 5px;
@@ -53,13 +53,13 @@ body {
   text-transform: uppercase;
 }
 
-.gold {
+.website {
   color: #d4c096;
   margin-bottom: 12px;
 }
 
-.silver {
-  color: #f5f2ea;
+.collection {
+  color: #d8d4cc;
   margin-bottom: 30px;
 }
 
@@ -72,16 +72,20 @@ body {
   text-transform: uppercase;
 }
 
-.arts {
+.bottom-images {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-top: -180px;
+  padding: 0;
+
   position: relative;
   z-index: 1;
 }
 
-.art {
-  position: absolute;
-  bottom: -120px;
-
+.bottom-image {
   width: 820px;
   height: 820px;
 
@@ -90,13 +94,13 @@ body {
   background-size: contain;
 }
 
-.art-left {
-  left: -160px;
+.image-left {
+  margin-left: -160px;
   background-image: url("image-1.png");
 }
 
-.art-right {
-  right: -160px;
+.image-right {
+  margin-right: -160px;
   background-image: url("image-2.png");
 }
 
@@ -104,10 +108,10 @@ body {
   .logo {
     width: 320px;
     height: 220px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
   }
 
-  .info {
+  .line {
     font-size: 15px;
     letter-spacing: 3px;
   }
@@ -117,17 +121,20 @@ body {
     letter-spacing: 2px;
   }
 
-  .art {
+  .bottom-images {
+    margin-top: -70px;
+  }
+
+  .bottom-image {
     width: 64vw;
     height: 64vw;
-    bottom: -35px;
   }
 
-  .art-left {
-    left: -20vw;
+  .image-left {
+    margin-left: -20vw;
   }
 
-  .art-right {
-    right: -20vw;
+  .image-right {
+    margin-right: -20vw;
   }
 }
