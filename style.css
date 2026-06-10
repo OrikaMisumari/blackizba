@@ -1,51 +1,111 @@
+/* Сбрасываем стандартные отступы и считаем размеры удобнее */
+* {
+  box-sizing: border-box;
+}
+
+/* Настройки всей страницы */
+html,
 body {
   margin: 0;
+  min-height: 100%;
+}
+
+/* Основной стиль сайта */
+body {
   background: #050505;
   color: #e8dfcf;
   font-family: Georgia, serif;
   text-align: center;
+
+  /* Запрещаем выделять элементы */
+  user-select: none;
+  -webkit-user-select: none;
 }
 
+/* Главный контейнер */
 .page {
   min-height: 100vh;
   padding: 50px 20px 70px;
 }
 
-.logo {
-  width: 260px;
-  max-width: 80%;
-  margin-bottom: 50px;
+/* Общие настройки для всех фоновых картинок */
+.logo,
+.picture {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  /* Чтобы картинки нельзя было кликать или тащить */
+  pointer-events: none;
 }
 
+/* Верхнее лого */
+.logo {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 50px;
+
+  background-image: url("logo.png");
+}
+
+/* Текстовый блок */
 .text {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto 70px;
+
   font-size: 22px;
   line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 
-.bottom {
+/* Блок с двумя нижними картинками */
+.bottom-images {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 70px;
   flex-wrap: wrap;
 }
 
-.bottom img {
+/* Размер нижних картинок */
+.picture {
   width: 300px;
-  max-width: 90%;
+  height: 300px;
 }
 
+/* Левая нижняя картинка */
+.picture-left {
+  background-image: url("image-1.png");
+}
+
+/* Правая нижняя картинка */
+.picture-right {
+  background-image: url("image-2.png");
+}
+
+/* Версия для телефона */
 @media (max-width: 700px) {
-  .text {
-    font-size: 18px;
+  .page {
+    padding: 40px 18px 60px;
   }
 
-  .bottom {
+  .logo {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .bottom-images {
     gap: 35px;
   }
 
-  .bottom img {
+  .picture {
     width: 240px;
+    height: 240px;
   }
 }
