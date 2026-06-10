@@ -51,15 +51,52 @@ body {
 /* ТЕКСТ */
 /* ===================================================== */
 
-.text {
+.welcome-box {
+
     max-width: 700px;
 
-    margin: 0 auto 70px auto;
+    margin: 0 auto;
 
-    font-size: 22px;
-    line-height: 1.6;
+    padding: 60px 40px;
+
+    border: 1px solid rgba(212, 170, 90, 0.35);
+
+    color: #d4aa5a;
 }
 
+.small-title {
+
+    font-size: 14px;
+
+    letter-spacing: 6px;
+
+    margin-bottom: 30px;
+}
+
+.main-text {
+
+    font-size: 34px;
+
+    margin-bottom: 40px;
+}
+
+.description {
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    margin-bottom: 60px;
+}
+
+.quote {
+
+    font-size: 18px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
 /* ===================================================== */
 /* НИЖНИЕ КАРТИНКИ */
 /* ===================================================== */
