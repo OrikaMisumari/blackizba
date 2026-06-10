@@ -32,37 +32,39 @@ body {
   height: 300px;
   margin: 0 auto 10px;
 
-  background-image: url("logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background: url("logo.png") center / contain no-repeat;
+  pointer-events: none;
 }
 
 .message {
   position: relative;
   z-index: 2;
-  margin: 0 auto;
   padding: 0 30px;
 }
 
-.line {
+/* Верхняя строка */
+.top-line {
+  color: #d4c096;
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 5px;
   line-height: 1.25;
   text-transform: uppercase;
-}
-
-.website {
-  color: #d4c096;
   margin-bottom: 12px;
 }
 
-.collection {
-  color: #d8d4cc;
+/* Первая коллекция — ТОТ ЖЕ размер, но цвет как лого */
+.fall-line {
+  color: #d8d3c8;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  line-height: 1.25;
+  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
+/* Слоган оставляем как был */
 .slogan {
   color: #d4c096;
   font-size: 30px;
@@ -72,34 +74,38 @@ body {
   text-transform: uppercase;
 }
 
-.bottom-images {
+/* Нижние картинки — нормальный нижний блок, не absolute */
+.art-row {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 
   margin-top: -180px;
-  padding: 0;
-
   position: relative;
   z-index: 1;
 }
 
-.bottom-image {
+/* Размер картинок как в нормальной версии */
+.art {
   width: 820px;
   height: 820px;
 
-  background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
+  background-repeat: no-repeat;
+
+  pointer-events: none;
 }
 
-.image-left {
+/* Левая картинка внизу */
+.art-left {
   margin-left: -160px;
   background-image: url("image-1.png");
 }
 
-.image-right {
+/* Правая картинка внизу */
+.art-right {
   margin-right: -160px;
   background-image: url("image-2.png");
 }
@@ -111,7 +117,8 @@ body {
     margin-bottom: 5px;
   }
 
-  .line {
+  .top-line,
+  .fall-line {
     font-size: 15px;
     letter-spacing: 3px;
   }
@@ -121,20 +128,20 @@ body {
     letter-spacing: 2px;
   }
 
-  .bottom-images {
+  .art-row {
     margin-top: -70px;
   }
 
-  .bottom-image {
+  .art {
     width: 64vw;
     height: 64vw;
   }
 
-  .image-left {
+  .art-left {
     margin-left: -20vw;
   }
 
-  .image-right {
+  .art-right {
     margin-right: -20vw;
   }
 }
