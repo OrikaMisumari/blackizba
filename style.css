@@ -14,7 +14,7 @@ body {
    ========================= */
 
 .logo {
-    width: 500px;
+    width: 400px;
     max-width: 90%;
     display: block;
     margin: 0 auto 30px auto;
@@ -39,7 +39,7 @@ body {
 }
 
 .collection {
-    color: #d7d2ca;
+    color: #c4bab0;
 
     font-size: 34px;
     font-weight: 700;
