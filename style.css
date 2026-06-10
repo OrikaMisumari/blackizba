@@ -75,12 +75,12 @@ body {
 
 /* Левая нижняя картинка */
 .picture-left {
-  background-image: url("logo.png");
+  background-image: url("image-1.png");
 }
 
 /* Правая нижняя картинка */
 .picture-right {
-  background-image: url("logo.png");
+  background-image: url("image-2.png");
 }
 
 /* Версия для телефона */
