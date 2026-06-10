@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Кодировка страницы -->
   <meta charset="UTF-8">
+
+  <!-- Адаптация под телефон -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Название вкладки -->
   <title>Black Izba</title>
+
+  <!-- Подключаем CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<!-- Запрещаем меню по правому клику -->
+<body oncontextmenu="return false;">
+
+  <!-- Главный блок всей страницы -->
   <main class="page">
 
-    <img class="logo" src="logo.png" alt="Black Izba logo">
+    <!-- Лого. Это не img, а фоновая картинка через CSS -->
+    <div class="logo"></div>
 
+    <!-- Текст между картинками -->
     <section class="text">
-      <p>Black Izba is a dark folklore clothing brand inspired by Slavic mythology.</p>
-      <p>Forgotten legends, ancient forests, old spirits and creatures from the edge of the woods.</p>
+      <p>
+        Black Izba is a dark folklore clothing brand inspired by Slavic mythology.
+      </p>
+
+      <p>
+        Forgotten legends, ancient forests, old spirits and creatures from the edge of the woods.
+      </p>
     </section>
 
-    <section class="bottom">
-      <img src="image-1.png" alt="">
-      <img src="image-2.png" alt="">
+    <!-- Нижние две картинки. Они тоже будут фоном через CSS -->
+    <section class="bottom-images">
+      <div class="picture picture-left"></div>
+      <div class="picture picture-right"></div>
     </section>
 
   </main>
+
 </body>
 </html>
