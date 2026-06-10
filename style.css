@@ -1,1 +1,93 @@
+/* Общие настройки страницы */
+body {
+  margin: 0;
+  background: #050505;
+  color: #e8dfcf;
+  font-family: Georgia, serif;
 
+  /* Запрещает выделять текст и элементы */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Главный контейнер */
+.page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Лого сверху */
+.logo {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 50px;
+
+  background-image: url("images/logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  pointer-events: none;
+}
+
+/* Текст посередине */
+.text {
+  max-width: 700px;
+  margin: 0 auto 70px;
+
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+/* Контейнер для двух нижних картинок */
+.bottom-images {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* Общие настройки нижних картинок */
+.bottom-image {
+  width: 280px;
+  height: 280px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  pointer-events: none;
+}
+
+/* Левая нижняя картинка */
+.image-left {
+  background-image: url("images/image-1.png");
+}
+
+/* Правая нижняя картинка */
+.image-right {
+  background-image: url("images/image-2.png");
+}
+
+/* Адаптация под телефон */
+@media (max-width: 700px) {
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .bottom-images {
+    gap: 40px;
+  }
+
+  .bottom-image {
+    width: 220px;
+    height: 220px;
+  }
+}
