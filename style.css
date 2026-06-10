@@ -1,140 +1,176 @@
-/* ========================================
-   ОБЩИЕ НАСТРОЙКИ СТРАНИЦЫ
-======================================== */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&display=swap");
 
-html,
-body {
+/* Сброс */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    background: #060606;
-
-    color: #f0e6d2;
-
-    font-family:
-        "Times New Roman",
-        Georgia,
-        serif;
 }
 
-/* ========================================
-   ЗАПРЕТ ВЫДЕЛЕНИЯ
-======================================== */
+/* Страница */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
 
-body,
-img,
-div {
+/* Общий стиль */
+body {
+    background: #050505;
+    color: #d4c096;
+    font-family: "Cinzel", serif;
+    text-align: center;
+
     user-select: none;
     -webkit-user-select: none;
-    -webkit-touch-callout: none;
 }
 
-/* ========================================
-   ЛОГО
-======================================== */
+/* Главный экран */
+.page {
+    min-height: 100vh;
+    padding-top: 20px;
+    overflow: hidden;
+}
 
+/* Лого */
 .logo {
-    position: absolute;
+    width: 420px;
+    height: 300px;
+    margin: 0 auto 10px;
 
-    top: 20px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 260px;   /* увеличили */
-    height: auto;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
     pointer-events: none;
 }
 
-/* ========================================
-   ЦЕНТРАЛЬНЫЙ БЛОК
-======================================== */
+/* Текстовый блок */
+.message {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
 
-.content {
-    position: absolute;
-
-    top: 250px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 100%;
-
-    text-align: center;
-
-    z-index: 10;
+    position: relative;
+    z-index: 2;
 }
 
 /* WEBSITE UNDER CONSTRUCTION */
-
 .construction {
-    color: #d6b06a;
+    margin-bottom: 14px;
 
-    font-size: 22px;
+    color: #d4c096;
 
-    letter-spacing: 4px;
-
-    margin-bottom: 18px;
-
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
-/* FIRST COLLECTION */
-
+/* FIRST COLLECTION DROPS THIS FALL */
 .collection {
-    color: #d6d6d6; /* серебро */
+    margin-bottom: 28px;
 
-    font-size: 22px; /* ТОЧНО ТАКОЙ ЖЕ РАЗМЕР */
+    color: #f2f2ec; /* как лого: светло-серебристый */
 
-    letter-spacing: 4px;
-
-    margin-bottom: 35px;
-
-    font-weight: 600;
+    font-size: 24px; /* такой же размер, как WEBSITE */
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
-/* ЛОЗУНГ */
+/* Слоган */
+.slogan {
+    color: #d4c096;
 
-.motto {
-    color: #e7d2a5;
-
-    font-size: 44px;
-
-    line-height: 1.2;
-
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.35;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-/* ========================================
-   НИЖНЯЯ ЛЕВАЯ КАРТИНКА
-======================================== */
+/* Нижние картинки */
+.bottom-images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
-.left-art {
-    position: fixed;
+    margin-top: -180px;
+    padding: 0;
 
-    left: -40px;
-    bottom: -40px;
+    position: relative;
+    z-index: 1;
+}
 
-    width: 500px; /* крупнее */
+/* Общие настройки нижних картинок */
+.bottom-image {
+    width: 820px;
+    height: 820px;
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
 
     pointer-events: none;
 }
 
-/* ========================================
-   НИЖНЯЯ ПРАВАЯ КАРТИНКА
-======================================== */
+/* Левая картинка */
+.image-left {
+    margin-left: -160px;
+    background-image: url("image-1.png");
+}
 
-.right-art {
-    position: fixed;
+/* Правая картинка */
+.image-right {
+    margin-right: -160px;
+    background-image: url("image-2.png");
+}
 
-    right: -40px;
-    bottom: -40px;
+/* Мобильная версия */
+@media (max-width: 700px) {
 
-    width: 500px; /* крупнее */
+    .page {
+        padding-top: 20px;
+    }
 
-    pointer-events: none;
+    .logo {
+        width: 320px;
+        height: 220px;
+        margin-bottom: 5px;
+    }
+
+    .message {
+        padding: 0 18px;
+    }
+
+    .construction,
+    .collection {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .slogan {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .bottom-images {
+        margin-top: -70px;
+    }
+
+    .bottom-image {
+        width: 64vw;
+        height: 64vw;
+    }
+
+    .image-left {
+        margin-left: -20vw;
+    }
+
+    .image-right {
+        margin-right: -20vw;
+    }
 }
