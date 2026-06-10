@@ -1,81 +1,80 @@
-/* Общие настройки страницы */
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
+  min-height: 100%;
+}
+
+body {
   background: #050505;
   color: #e8dfcf;
   font-family: Georgia, serif;
+  text-align: center;
 
-  /* Запрещает выделять текст и элементы */
   user-select: none;
   -webkit-user-select: none;
 }
 
-/* Главный контейнер */
 .page {
   min-height: 100vh;
-  padding: 60px 20px;
-  text-align: center;
+  padding: 50px 20px 70px;
 }
 
-/* Лого сверху */
-.logo {
-  width: 260px;
-  height: 260px;
-  margin: 0 auto 50px;
-
-  background-image: url("logo.png");
+.logo,
+.bottom-image {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
   pointer-events: none;
 }
 
-/* Текст посередине */
-.text {
-  max-width: 700px;
-  margin: 0 auto 70px;
+.logo {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 45px;
+  background-image: url("./logo.png");
+}
 
+.text {
+  max-width: 720px;
+  margin: 0 auto 60px;
   font-size: 22px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
 
-/* Контейнер для двух нижних картинок */
 .bottom-images {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  align-items: flex-start;
+  gap: 70px;
   flex-wrap: wrap;
 }
 
-/* Общие настройки нижних картинок */
 .bottom-image {
-  width: 280px;
-  height: 280px;
-
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  pointer-events: none;
+  width: 300px;
+  height: 300px;
 }
 
-/* Левая нижняя картинка */
 .image-left {
-  background-image: url("logo.png");
+  background-image: url("./image-1.png");
 }
 
-/* Правая нижняя картинка */
 .image-right {
-  background-image: url("image-2.png");
+  background-image: url("./image-2.png");
 }
 
-/* Адаптация под телефон */
 @media (max-width: 700px) {
+  .page {
+    padding-top: 40px;
+  }
+
   .logo {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
   }
 
   .text {
@@ -83,11 +82,11 @@ body {
   }
 
   .bottom-images {
-    gap: 40px;
+    gap: 35px;
   }
 
   .bottom-image {
-    width: 220px;
-    height: 220px;
+    width: 240px;
+    height: 240px;
   }
 }
