@@ -32,8 +32,8 @@ body {
 
 /* Логотип сверху */
 .logo {
-    width: 230px;
-    height: 230px;
+    width: 800px;
+    height: 800px;
     margin: 0 auto 35px;
 
     background-image: url("logo.png");
@@ -62,7 +62,7 @@ body {
 
 /* Первая строка */
 .text p:first-child {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: 6px;
     text-transform: uppercase;
