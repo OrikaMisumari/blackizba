@@ -9,7 +9,7 @@
 html,
 body {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -21,33 +21,34 @@ body {
   -webkit-user-select: none;
 }
 
-.bi-page {
+.page {
+  position: relative;
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 
-.bi-center {
-  padding-top: 26px;
+/* Центральный блок */
+.center {
   position: relative;
-  z-index: 2;
+  z-index: 5;
+  padding-top: 28px;
 }
 
-.bi-logo {
-  width: 420px;
-  height: 285px;
-  margin: 0 auto 8px;
-  background: url("logo.png") center / contain no-repeat;
-  pointer-events: none;
+/* Лого крупнее */
+.logo {
+  width: 460px;
+  height: 320px;
+  margin: 0 auto 14px;
+
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.bi-text {
-  padding: 0 24px;
-}
-
-.bi-line {
+/* Две верхние строки одинакового размера */
+.line {
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 5px;
@@ -55,17 +56,18 @@ body {
   text-transform: uppercase;
 }
 
-.bi-gold {
+.gold {
   color: #d4c096;
   margin-bottom: 10px;
 }
 
-.bi-silver {
-  color: #d6d3cb;
-  margin-bottom: 26px;
+/* Серый как лого, не белый */
+.grey {
+  color: #d8d4cc;
+  margin-bottom: 28px;
 }
 
-.bi-slogan {
+.slogan {
   color: #d4c096;
   font-size: 30px;
   font-weight: 900;
@@ -74,65 +76,63 @@ body {
   text-transform: uppercase;
 }
 
-.bi-bottom {
-  margin-top: auto;
-  width: 100%;
-  height: 330px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  overflow: hidden;
-}
+/* Картинки: стоят снизу, не режутся сверху */
+.art {
+  position: absolute;
+  bottom: -40px;
+  width: 46vw;
+  height: 70vh;
 
-.bi-art {
-  width: 620px;
-  height: 330px;
   background-repeat: no-repeat;
-  background-position: bottom center;
   background-size: contain;
+  background-position: bottom center;
+
   pointer-events: none;
+  z-index: 1;
 }
 
-.bi-art-left {
-  margin-left: -70px;
+.art-left {
+  left: -3vw;
   background-image: url("image-1.png");
 }
 
-.bi-art-right {
-  margin-right: -70px;
+.art-right {
+  right: -3vw;
   background-image: url("image-2.png");
 }
 
 @media (max-width: 700px) {
-  .bi-logo {
-    width: 320px;
-    height: 220px;
+  .center {
+    padding-top: 24px;
   }
 
-  .bi-line {
+  .logo {
+    width: 320px;
+    height: 220px;
+    margin-bottom: 10px;
+  }
+
+  .line {
     font-size: 15px;
     letter-spacing: 3px;
   }
 
-  .bi-slogan {
+  .slogan {
     font-size: 18px;
     letter-spacing: 2px;
   }
 
-  .bi-bottom {
-    height: 230px;
+  .art {
+    bottom: -20px;
+    width: 58vw;
+    height: 42vh;
   }
 
-  .bi-art {
-    width: 330px;
-    height: 230px;
+  .art-left {
+    left: -14vw;
   }
 
-  .bi-art-left {
-    margin-left: -75px;
-  }
-
-  .bi-art-right {
-    margin-right: -75px;
+  .art-right {
+    right: -14vw;
   }
 }
