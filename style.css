@@ -1,7 +1,7 @@
 /* Шрифт */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&display=swap");
 
-/* Сброс */
+/* Сброс отступов */
 * {
     box-sizing: border-box;
 }
@@ -24,7 +24,7 @@ body {
     -webkit-user-select: none;
 }
 
-/* Главный экран */
+/* Общий экран */
 .page {
     min-height: 100vh;
     padding-top: 20px;
@@ -57,7 +57,9 @@ body {
 
 /* WEBSITE UNDER CONSTRUCTION */
 .small-title {
-    margin: 0 0 18px;
+    margin: 0 0 14px;
+
+    color: #d4c096;
 
     font-size: 24px;
     font-weight: 800;
@@ -65,20 +67,23 @@ body {
     text-transform: uppercase;
 }
 
-/* FIRST COLLECTION DROPS THIS FALL */
-.main-title {
-    margin: 0 0 24px;
+/* FIRST COLLECTION DROPS THIS FALL — тот же размер, серебристый */
+.fall-title {
+    margin: 0 0 26px;
 
-    font-size: 48px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    line-height: 1.15;
+    color: #c9c9c9;
+
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
 /* Слоган */
 .slogan {
     margin: 0;
+
+    color: #d4c096;
 
     font-size: 30px;
     font-weight: 900;
@@ -128,10 +133,6 @@ body {
 
 /* Телефон */
 @media (max-width: 700px) {
-    .page {
-        padding-top: 20px;
-    }
-
     .logo {
         width: 320px;
         height: 220px;
@@ -142,15 +143,10 @@ body {
         padding: 0 18px;
     }
 
-    .small-title {
+    .small-title,
+    .fall-title {
         font-size: 15px;
         letter-spacing: 3px;
-        margin-bottom: 14px;
-    }
-
-    .main-title {
-        font-size: 28px;
-        margin-bottom: 20px;
     }
 
     .slogan {
