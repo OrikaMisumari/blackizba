@@ -35,25 +35,25 @@ body {
     font-weight: 700;
     letter-spacing: 4px;
 
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .collection {
     color: #c4bab0;
 
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 4px;
     margin-bottom: 30px;
 }
 
 .slogan {
-    color: #d1b98f;
+    color: #6e5222;
     font-size: 34px;
     font-weight: 700;
     letter-spacing: 4px;
 
-    margin-bottom: -30px;
+    margin-bottom: -300px;
 }
 
 /* =========================
