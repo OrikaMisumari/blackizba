@@ -23,7 +23,7 @@ body {
   height: 260px;
   margin: 0 auto 50px;
 
-  background-image: url("images/logo.png");
+  background-image: url("logo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,12 +63,12 @@ body {
 
 /* Левая нижняя картинка */
 .image-left {
-  background-image: url("images/image-1.png");
+  background-image: url("image-1.png");
 }
 
 /* Правая нижняя картинка */
 .image-right {
-  background-image: url("images/image-2.png");
+  background-image: url("image-2.png");
 }
 
 /* Адаптация под телефон */
