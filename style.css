@@ -1,221 +1,56 @@
-/* Шрифт */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-/* Сброс */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<head>
+    <!-- Кодировка -->
+    <meta charset="UTF-8">
 
-/* Страница */
-html,
-body {
-    width: 100%;
-    min-height: 100%;
-}
+    <!-- Телефоны -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Общий стиль */
-body {
-    background: #050505;
+    <!-- Название вкладки -->
+    <title>Black Izba</title>
 
-    color: #d4c096;
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    font-family: 'Cinzel', serif;
+<body oncontextmenu="return false;">
 
-    text-align: center;
+    <main class="page">
 
-    user-select: none;
-    -webkit-user-select: none;
-}
+        <!-- ЛОГО -->
+        <div class="logo"></div>
 
-/* Главный блок */
-.page {
-    min-height: 100vh;
+        <!-- ТЕКСТ -->
+        <section class="message">
 
-    padding-top: 20px;
+            <p class="construction">
+                WEBSITE UNDER CONSTRUCTION
+            </p>
 
-    overflow: hidden;
-}
+            <p class="fall">
+                FIRST COLLECTION DROPS THIS FALL
+            </p>
 
-/* ================================= */
-/* ЛОГО */
-/* ================================= */
+            <p class="slogan">
+                BORN UNDER THE SUN.<br>
+                LOYAL TO THE SHADOWS.
+            </p>
 
-.logo {
+        </section>
 
-    width: 420px;
-    height: 260px;
+        <!-- НИЖНИЕ КАРТИНКИ -->
+        <section class="bottom-images">
 
-    margin: 0 auto 10px;
+            <div class="bottom-image image-left"></div>
 
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
+            <div class="bottom-image image-right"></div>
 
-/* ================================= */
-/* ТЕКСТ */
-/* ================================= */
+        </section>
 
-.message {
+    </main>
 
-    max-width: 1200px;
+</body>
 
-    margin: 0 auto;
-
-    padding: 0 20px;
-
-    position: relative;
-    z-index: 2;
-}
-
-/* WEBSITE UNDER CONSTRUCTION */
-
-.construction {
-
-    color: #d4c096;
-
-    font-size: 24px;
-
-    font-weight: 800;
-
-    letter-spacing: 6px;
-
-    text-transform: uppercase;
-
-    margin-bottom: 12px;
-}
-
-/* FIRST COLLECTION DROPS THIS FALL */
-
-.fall {
-
-    color: #c7c7c7;
-
-    font-size: 24px;
-
-    font-weight: 800;
-
-    letter-spacing: 6px;
-
-    text-transform: uppercase;
-
-    margin-bottom: 24px;
-}
-
-/* СЛОГАН */
-
-.slogan {
-
-    color: #d4c096;
-
-    font-size: 30px;
-
-    font-weight: 900;
-
-    letter-spacing: 3px;
-
-    line-height: 1.35;
-
-    text-transform: uppercase;
-}
-
-/* ================================= */
-/* НИЖНИЕ КАРТИНКИ */
-/* ================================= */
-
-.bottom-images {
-
-    width: 100%;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: flex-end;
-
-    margin-top: -180px;
-
-    position: relative;
-
-    z-index: 1;
-}
-
-/* Общие настройки */
-
-.bottom-image {
-
-    width: 850px;
-    height: 850px;
-
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: contain;
-}
-
-/* Левая */
-
-.image-left {
-
-    margin-left: -170px;
-
-    background-image: url("image-1.png");
-}
-
-/* Правая */
-
-.image-right {
-
-    margin-right: -170px;
-
-    background-image: url("image-2.png");
-}
-
-/* ================================= */
-/* МОБИЛЬНАЯ ВЕРСИЯ */
-/* ================================= */
-
-@media (max-width: 700px) {
-
-    .logo {
-
-        width: 300px;
-        height: 200px;
-    }
-
-    .construction,
-    .fall {
-
-        font-size: 14px;
-
-        letter-spacing: 3px;
-    }
-
-    .slogan {
-
-        font-size: 18px;
-    }
-
-    .bottom-images {
-
-        margin-top: -70px;
-    }
-
-    .bottom-image {
-
-        width: 62vw;
-        height: 62vw;
-    }
-
-    .image-left {
-
-        margin-left: -18vw;
-    }
-
-    .image-right {
-
-        margin-right: -18vw;
-    }
-}
+</html>
