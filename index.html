@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Кодировка страницы -->
-  <meta charset="UTF-8">
+    <!-- Кодировка -->
+    <meta charset="UTF-8">
 
-  <!-- Адаптация под телефон -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Адаптация под телефон -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Название вкладки -->
-  <title>Black Izba</title>
+    <!-- Название вкладки -->
+    <title>Black Izba</title>
 
-  <!-- Подключаем CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- Запрещаем меню по правому клику -->
+<!-- Отключаем меню правой кнопки -->
 <body oncontextmenu="return false;">
 
-  <!-- Главный блок всей страницы -->
-  <main class="page">
+    <!-- Главный контейнер страницы -->
+    <main class="page">
 
-    <!-- Лого. Это не img, а фоновая картинка через CSS -->
-    <div class="logo"></div>
+        <!-- Логотип сверху -->
+        <div class="logo"></div>
 
-    <!-- Текст между картинками -->
-    <section class="text">
-      <p>
-        Black Izba is a dark folklore clothing brand inspired by Slavic mythology.
-      </p>
+        <!-- Текстовый блок -->
+        <section class="text">
 
-      <p>
-        Forgotten legends, ancient forests, old spirits and creatures from the edge of the woods.
-      </p>
-    </section>
+            <p>
+                Black Izba is a dark folklore clothing brand inspired by Slavic mythology.
+            </p>
 
-    <!-- Нижние две картинки. Они тоже будут фоном через CSS -->
-    <section class="bottom-images">
-      <div class="picture picture-left"></div>
-      <div class="picture picture-right"></div>
-    </section>
+            <p>
+                Forgotten legends, ancient forests, old spirits and creatures from the edge of the woods.
+            </p>
 
-  </main>
+        </section>
+
+        <!-- Нижний блок с двумя изображениями -->
+        <section class="gallery">
+
+            <!-- Левая картинка -->
+            <div class="gallery-image left-image"></div>
+
+            <!-- Правая картинка -->
+            <div class="gallery-image right-image"></div>
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
