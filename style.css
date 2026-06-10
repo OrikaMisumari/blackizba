@@ -51,9 +51,10 @@ body {
 .slogan {
     color: #d1b98f;
 
-    font-size: 340px;
     font-weight: 700;
-    line-height: 1.2;
+    letter-spacing: 4px;
+
+    margin-bottom: 30px;
 }
 
 /* =========================
