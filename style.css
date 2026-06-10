@@ -1,19 +1,19 @@
-/* Подключаем шрифт, похожий на референс */
+/* Подключаем шрифт как на референсе */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap");
 
-/* Удобный расчёт размеров */
+/* Сбрасываем стандартные отступы */
 * {
     box-sizing: border-box;
 }
 
-/* Убираем стандартные отступы */
 html,
 body {
     margin: 0;
     padding: 0;
+    min-height: 100%;
 }
 
-/* Общие настройки сайта */
+/* Общий стиль сайта */
 body {
     background: #050505;
     color: #d4c096;
@@ -24,16 +24,17 @@ body {
     -webkit-user-select: none;
 }
 
-/* Главный контейнер */
+/* Основная страница */
 .page {
     min-height: 100vh;
-    padding: 60px 40px 0;
+    padding: 50px 40px 0;
+    overflow: hidden;
 }
 
-/* Логотип сверху */
+/* Лого */
 .logo {
-    width: 800px;
-    height: 800px;
+    width: 320px;
+    height: 320px;
     margin: 0 auto 35px;
 
     background-image: url("logo.png");
@@ -45,56 +46,63 @@ body {
 }
 
 /* Рамка с текстом */
-.text {
-    max-width: 780px;
-    margin: 0 auto 40px;
-    padding: 45px 55px;
+.message-box {
+    width: 760px;
+    max-width: 90vw;
 
-    border: 1px solid rgba(212, 192, 150, 0.35);
+    margin: 0 auto 35px;
+    padding: 42px 50px;
+
+    border: 1px solid rgba(212, 192, 150, 0.55);
 
     color: #d4c096;
 }
 
-/* Текст внутри рамки */
-.text p {
+/* WEBSITE UNDER CONSTRUCTION */
+.small-title {
     margin: 0 0 28px;
-}
 
-/* Первая строка */
-.text p:first-child {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 5px;
     text-transform: uppercase;
 }
 
-/* Вторая строка */
-.text p:nth-child(2) {
-    font-size: 30px;
+/* First collection drops this fall */
+.main-title {
+    margin: 0 0 45px;
+
+    font-size: 34px;
     font-weight: 500;
-    letter-spacing: 1px;
 }
 
-/* Последний абзац */
-.text p:last-child {
-    margin-bottom: 0;
+/* Born under... */
+.slogan {
+    margin: 0;
+
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-/* Нижний блок с картинками */
-.gallery {
+/* Блок нижних картинок */
+.bottom-images {
     width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 
+    padding: 0 5vw;
     margin-top: 10px;
-    padding: 0 7vw;
 }
 
 /* Общие настройки нижних картинок */
-.gallery-image {
-    width: 600px;
-    height: 600px;
+.bottom-image {
+    width: 620px;
+    height: 620px;
 
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -104,48 +112,54 @@ body {
 }
 
 /* Левая картинка */
-.left-image {
+.image-left {
     background-image: url("image-1.png");
 }
 
 /* Правая картинка */
-.right-image {
+.image-right {
     background-image: url("image-2.png");
 }
 
-/* Адаптация под телефон */
+/* Телефон */
 @media (max-width: 700px) {
     .page {
-        padding: 40px 20px 0;
+        padding: 35px 18px 0;
     }
 
     .logo {
-        width: 180px;
-        height: 180px;
+        width: 240px;
+        height: 240px;
         margin-bottom: 25px;
     }
 
-    .text {
-        padding: 35px 25px;
-        margin-bottom: 30px;
+    .message-box {
+        padding: 34px 22px;
+        margin-bottom: 20px;
     }
 
-    .text p:first-child {
-        font-size: 13px;
-        letter-spacing: 4px;
+    .small-title {
+        font-size: 14px;
+        letter-spacing: 3px;
     }
 
-    .text p:nth-child(2) {
-        font-size: 22px;
+    .main-title {
+        font-size: 24px;
+        margin-bottom: 35px;
     }
 
-    .gallery {
+    .slogan {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .bottom-images {
         padding: 0;
         gap: 20px;
     }
 
-    .gallery-image {
-        width: 48vw;
-        height: 48vw;
+    .bottom-image {
+        width: 52vw;
+        height: 52vw;
     }
 }
