@@ -1,7 +1,7 @@
-/* Шрифт как на референсе */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap");
+/* Шрифт в стиле постера */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
 
-/* Сброс отступов */
+/* Убираем стандартные отступы */
 * {
     box-sizing: border-box;
 }
@@ -13,7 +13,7 @@ body {
     min-height: 100%;
 }
 
-/* Основной стиль */
+/* Общий стиль сайта */
 body {
     background: #050505;
     color: #d4c096;
@@ -24,18 +24,18 @@ body {
     -webkit-user-select: none;
 }
 
-/* Вся страница */
+/* Главный контейнер */
 .page {
     min-height: 100vh;
-    padding: 35px 40px 0;
+    padding: 30px 0 0;
     overflow: hidden;
 }
 
-/* Лого — крупнее */
+/* ЛОГО — крупнее */
 .logo {
-    width: 430px;
-    height: 430px;
-    margin: 0 auto 20px;
+    width: 520px;
+    height: 360px;
+    margin: 0 auto 10px;
 
     background-image: url("logo.png");
     background-repeat: no-repeat;
@@ -45,66 +45,59 @@ body {
     pointer-events: none;
 }
 
-/* Рамка с текстом */
-.message-box {
-    width: 600px;
-    max-width: 90vw;
-
-    margin: 0 auto 10px;
-    padding: 55px 70px;
-
-    border: 2px solid rgba(212, 192, 150, 0.7);
-
-    color: #d4c096;
+/* ТЕКСТ — без рамки */
+.message {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding: 0 30px;
 }
 
 /* WEBSITE UNDER CONSTRUCTION */
-.status {
-    margin: 0 0 38px;
+.small-title {
+    margin: 0 0 24px;
 
-    font-size: 34px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 800;
     letter-spacing: 7px;
     text-transform: uppercase;
 }
 
-/* FIRST COLLECTION... */
-.release {
-    margin: 0 0 55px;
+/* FIRST COLLECTION DROPS THIS FALL */
+.main-title {
+    margin: 0 0 36px;
 
-    font-size: 42px;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
-/* BORN UNDER... */
+/* BORN UNDER THE SUN */
 .slogan {
     margin: 0;
 
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 1.45;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.35;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
-/* Нижние картинки — вернуть и сделать крупными */
+/* Нижние картинки */
 .bottom-images {
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 
-    padding: 0 2vw;
-    margin-top: -40px;
+    margin-top: -20px;
+    padding: 0;
 }
 
-/* Общий стиль нижних картинок */
+/* Обе нижние картинки — сильно крупнее */
 .bottom-image {
-    width: 760px;
-    height: 760px;
+    width: 900px;
+    height: 900px;
 
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -113,58 +106,67 @@ body {
     pointer-events: none;
 }
 
-/* Левая картинка */
+/* Левая картинка — сильнее влево */
 .image-left {
+    margin-left: -180px;
     background-image: url("image-1.png");
 }
 
-/* Правая картинка */
+/* Правая картинка — сильнее вправо */
 .image-right {
+    margin-right: -180px;
     background-image: url("image-2.png");
 }
 
-/* Телефон */
+/* Версия для телефона */
 @media (max-width: 700px) {
+
     .page {
-        padding: 30px 16px 0;
+        padding-top: 25px;
     }
 
     .logo {
-        width: 280px;
-        height: 280px;
+        width: 330px;
+        height: 230px;
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 0 18px;
         margin-bottom: 20px;
     }
 
-    .message-box {
-        padding: 36px 22px;
-        border-width: 1px;
-        margin-bottom: 0;
+    .small-title {
+        font-size: 18px;
+        letter-spacing: 4px;
+        margin-bottom: 18px;
     }
 
-    .status {
-        font-size: 17px;
-        letter-spacing: 3px;
+    .main-title {
+        font-size: 34px;
+        letter-spacing: 2px;
         margin-bottom: 28px;
     }
 
-    .release {
-        font-size: 22px;
-        margin-bottom: 36px;
-    }
-
     .slogan {
-        font-size: 17px;
-        letter-spacing: 2px;
+        font-size: 22px;
+        letter-spacing: 3px;
     }
 
     .bottom-images {
-        padding: 0;
-        margin-top: -10px;
-        gap: 10px;
+        margin-top: 0;
     }
 
     .bottom-image {
-        width: 58vw;
-        height: 58vw;
+        width: 62vw;
+        height: 62vw;
+    }
+
+    .image-left {
+        margin-left: -18vw;
+    }
+
+    .image-right {
+        margin-right: -18vw;
     }
 }
