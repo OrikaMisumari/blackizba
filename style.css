@@ -1,23 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&display=swap");
 
-/* Сброс */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Страница */
 html,
 body {
     width: 100%;
     min-height: 100%;
 }
 
-/* Общий стиль */
 body {
     background: #050505;
-    color: #d4c096;
     font-family: "Cinzel", serif;
     text-align: center;
 
@@ -25,14 +21,12 @@ body {
     -webkit-user-select: none;
 }
 
-/* Главный экран */
 .page {
     min-height: 100vh;
     padding-top: 20px;
     overflow: hidden;
 }
 
-/* Лого */
 .logo {
     width: 420px;
     height: 300px;
@@ -46,7 +40,6 @@ body {
     pointer-events: none;
 }
 
-/* Текстовый блок */
 .message {
     max-width: 1000px;
     margin: 0 auto;
@@ -56,31 +49,27 @@ body {
     z-index: 2;
 }
 
-/* WEBSITE UNDER CONSTRUCTION */
-.construction {
-    margin-bottom: 14px;
-
-    color: #d4c096;
-
+/* ОБЕ СТРОКИ ОДИНАКОВОГО РАЗМЕРА */
+.small-line {
     font-size: 24px;
     font-weight: 800;
     letter-spacing: 5px;
+    line-height: 1.25;
     text-transform: uppercase;
 }
 
-/* FIRST COLLECTION DROPS THIS FALL */
-.collection {
+/* WEBSITE UNDER CONSTRUCTION */
+.gold {
+    color: #d4c096;
+    margin-bottom: 14px;
+}
+
+/* FIRST COLLECTION DROPS THIS FALL — цвет как у лого */
+.silver {
+    color: #f2f2ec;
     margin-bottom: 28px;
-
-    color: #f2f2ec; /* как лого: светло-серебристый */
-
-    font-size: 24px; /* такой же размер, как WEBSITE */
-    font-weight: 800;
-    letter-spacing: 5px;
-    text-transform: uppercase;
 }
 
-/* Слоган */
 .slogan {
     color: #d4c096;
 
@@ -91,7 +80,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Нижние картинки */
 .bottom-images {
     width: 100%;
     display: flex;
@@ -105,7 +93,6 @@ body {
     z-index: 1;
 }
 
-/* Общие настройки нижних картинок */
 .bottom-image {
     width: 820px;
     height: 820px;
@@ -117,25 +104,17 @@ body {
     pointer-events: none;
 }
 
-/* Левая картинка */
 .image-left {
     margin-left: -160px;
     background-image: url("image-1.png");
 }
 
-/* Правая картинка */
 .image-right {
     margin-right: -160px;
     background-image: url("image-2.png");
 }
 
-/* Мобильная версия */
 @media (max-width: 700px) {
-
-    .page {
-        padding-top: 20px;
-    }
-
     .logo {
         width: 320px;
         height: 220px;
@@ -146,8 +125,7 @@ body {
         padding: 0 18px;
     }
 
-    .construction,
-    .collection {
+    .small-line {
         font-size: 15px;
         letter-spacing: 3px;
     }
