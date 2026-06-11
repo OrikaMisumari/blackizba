@@ -72,7 +72,7 @@ body {
    ========================= */
 
 .bottom-images {
-    margin-top: -700px;
+    margin-top: -500px;
     position: relative;
 
     z-index: 2;
@@ -86,7 +86,7 @@ body {
 }
 
 .bottom-image {
-    width: 800px;
+    width: 700px;
     max-width: 40vw;
     height: auto;
 
