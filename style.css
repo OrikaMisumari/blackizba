@@ -5,6 +5,8 @@
     -webkit-user-drag: none;
 }
 body {
+    position: relative;
+    z-index: 1;
     margin: 0;
     padding: 20px 0;
     background: #050505;
@@ -73,7 +75,7 @@ body {
     margin-top: -700px;
     position: relative;
 
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: flex-end;
