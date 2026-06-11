@@ -72,7 +72,7 @@ body {
    ========================= */
 
 .bottom-images {
-    margin-top: -300px;
+    margin-top: -500px;
     position: relative;
 
     z-index: 2;
@@ -80,7 +80,7 @@ body {
     justify-content: center;
     align-items: flex-end;
 
-    gap: 400px;
+    gap: 500px;
 
     width: 100%;
 }
